@@ -168,12 +168,25 @@ love & enjoy */
     font-weight: 600;
 }
 
-.love-enjoy {
+.love-enjoy-container {
     display: flex;
     max-width: 1440px;
     gap: 140px;
     justify-content: center;
     align-items: center;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.year-text {
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* some facts related style  */
@@ -236,7 +249,19 @@ love & enjoy */
     filter: grayscale(100%)
 }
 
-
+/* footer style  */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin: 130px auto;
+    background-color: #FFF4E7;
+    color: #424242;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
 
 
 
@@ -245,31 +270,57 @@ love & enjoy */
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, 
+    .nav-links, 
+    .love-enjoy-container,
+    .teams{
         flex-direction: column;
         align-items: center;
     }
 
-.team-img-container, .fact-container, .sponsor-compony {
-    grid-template-columns: repeat(1, 1fr);
-}
+    .navbar {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
 
-.sponsor-compony{
+    .team-img-container, .fact-container, .sponsor-compony {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    
+      #experience-badge  {
+    margin-top: -100px;
+    margin-left: 10%;
+    }
+
+    .sponsor-compony{
     gap: 30px;
     justify-items: center;
-}
-.fact-container {
+    }
+
+
+    .fact-container {
    
-    margin-left: 122px;
+    margin-left: 20%;
     margin-top: 50px;
-}
+    }
+    .experience-badge-body img {
+    width: 100%;
+    }
 
+  
 
+    .banner{
+        margin-top: 35px;
+    }
 
+    .banner-img {
+      padding-bottom: 0;
+    
+    }
 
-.teams {
+    .teams {
     margin-bottom: 0px;
-}
+    }
 
 
     
@@ -278,14 +329,24 @@ love & enjoy */
 /* medium size device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams {
+    .teams , .love-enjoy-container {
         flex-direction: column;
         gap: 55px;
        
     }
 
+    .love-enjoy-container {
+    
+        margin: 0 auto;
+    }
+
     .our-features {
     margin: 50px auto;
+    }
+
+          #experience-badge  {
+    margin-top: -100px;
+    margin-left: 10%;
     }
 
     .sponsor-compony, .fact-container {
